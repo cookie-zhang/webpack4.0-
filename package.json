@@ -9,7 +9,10 @@
   "author": "cookie-zhang",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2"
   }
