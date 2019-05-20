@@ -20,8 +20,12 @@ module.exports = {
 				}
 			}
 		},{
-			test: /\.css$/,
-			use:['style-loader', 'css-loader']
+			test: /\.scss$/,
+			use:[
+				'style-loader', 
+				'css-loader',
+				'sass-loader'
+			]
 		}]
 	}, 
 	output: {//出口 打包后的index.js文件名字和所在的文件夹

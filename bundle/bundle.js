@@ -130,14 +130,14 @@ eval("module.exports = \"data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/index.css":
-/*!*************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
-  \*************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/index.scss":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/index.scss ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".imgOne{\\r\\n\\twidth: 150px;\\r\\n\\theight: 150px;\\r\\n}\\r\\n\\r\\n.imgTwo{\\r\\n\\twidth: 300px;\\r\\n\\theight: 300px;\\r\\n}\\r\\n\\r\\n.imgThree{\\r\\n\\twidth: 450px;\\r\\n\\theight: 450px;\\r\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/index.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body .imgOne {\\n  width: 150px;\\n  height: 150px; }\\n\\nbody .imgTwo {\\n  width: 300px;\\n  height: 300px; }\\n\\nbody .imgThree {\\n  width: 450px;\\n  height: 450px; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/index.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -175,17 +175,6 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
-/***/ "./src/index.css":
-/*!***********************!*\
-  !*** ./src/index.css ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./index.css */ \"./node_modules/css-loader/dist/cjs.js!./src/index.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/index.css?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -194,7 +183,18 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/c
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _img_webLogo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../img/webLogo.png */ \"./img/webLogo.png\");\n/* harmony import */ var _img_webLogo_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_img_webLogo_png__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _img_webpackLogo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/webpackLogo.png */ \"./img/webpackLogo.png\");\n/* harmony import */ var _img_webpackLogo_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_webpackLogo_png__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _img_12_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/12.jpg */ \"./img/12.jpg\");\n/* harmony import */ var _img_12_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_12_jpg__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _img_gif_gif__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/gif.gif */ \"./img/gif.gif\");\n/* harmony import */ var _img_gif_gif__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_gif_gif__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_4__);\nvar n=document.getElementById(\"root\")\r\nvar r=document.createElement(\"div\")\r\n\r\n\r\n\r\n\r\n\r\nr.innerText=\"webpack\"\r\nn.append(r)\r\nvar img = document.createElement(\"img\")\r\nvar img2 = document.createElement(\"img\")\r\nvar img3 = document.createElement(\"img\")\r\nimg.src = '../img/webLogo.png';\r\nimg2.src = _img_12_jpg__WEBPACK_IMPORTED_MODULE_2___default.a;\r\nimg3.src = _img_gif_gif__WEBPACK_IMPORTED_MODULE_3___default.a;\r\n//样式  h5新特性  给节点添加class名  对应的还有clssList.add 添加  .remove 删除  .toggle 替换\r\nimg.classList.add('imgOne');\r\nimg2.classList.add('imgTwo');\r\nimg3.classList.add('imgThree');\r\n\r\n\r\nn.append(img);\r\nn.append(img2);\r\nn.append(img3);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _img_webLogo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../img/webLogo.png */ \"./img/webLogo.png\");\n/* harmony import */ var _img_webLogo_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_img_webLogo_png__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _img_webpackLogo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/webpackLogo.png */ \"./img/webpackLogo.png\");\n/* harmony import */ var _img_webpackLogo_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_webpackLogo_png__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _img_12_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/12.jpg */ \"./img/12.jpg\");\n/* harmony import */ var _img_12_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_12_jpg__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _img_gif_gif__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/gif.gif */ \"./img/gif.gif\");\n/* harmony import */ var _img_gif_gif__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_gif_gif__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_4__);\nvar n=document.getElementById(\"root\")\r\nvar r=document.createElement(\"div\")\r\n\r\n\r\n\r\n\r\n\r\nr.innerText=\"webpack\"\r\nn.append(r)\r\nvar img = document.createElement(\"img\")\r\nvar img2 = document.createElement(\"img\")\r\nvar img3 = document.createElement(\"img\")\r\nimg.src = '../img/webLogo.png';\r\nimg2.src = _img_12_jpg__WEBPACK_IMPORTED_MODULE_2___default.a;\r\nimg3.src = _img_gif_gif__WEBPACK_IMPORTED_MODULE_3___default.a;\r\n//样式  h5新特性  给节点添加class名  对应的还有clssList.add 添加  .remove 删除  .toggle 替换\r\nimg.classList.add('imgOne');\r\nimg2.classList.add('imgTwo');\r\nimg3.classList.add('imgThree');\r\n\r\n\r\nn.append(img);\r\nn.append(img2);\r\nn.append(img3);\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/index.scss":
+/*!************************!*\
+  !*** ./src/index.scss ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/lib/loader.js!./index.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/index.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/index.scss?");
 
 /***/ })
 

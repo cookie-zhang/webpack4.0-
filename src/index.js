@@ -4,7 +4,7 @@ import c from '../img/webLogo.png'
 import d from '../img/webpackLogo.png'
 import e from '../img/12.jpg'
 import f from '../img/gif.gif'
-import './index.css'
+import './index.scss'
 r.innerText="webpack"
 n.append(r)
 var img = document.createElement("img")
